@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import ru.netology.PosterMovie;
 
 public class PosterMovieTest {
-    
+
     @Test
     public void shouldAddMovie() {
         PosterMovie film = new PosterMovie();
@@ -15,6 +15,7 @@ public class PosterMovieTest {
         String[] actual = film.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void shouldFindLast() {
         PosterMovie film = new PosterMovie(3);
@@ -22,10 +23,11 @@ public class PosterMovieTest {
         film.addMovie("m2");
         film.addMovie("m3");
         film.addMovie("m4");
-        String[] exoected = {"m4", "m3","m2"};
+        String[] exoected = {"m4", "m3", "m2"};
         String[] actual = film.findLast();
         Assertions.assertArrayEquals(exoected, actual);
     }
+
     @Test
     public void shouldFindLastFive() {
         PosterMovie film = new PosterMovie();
