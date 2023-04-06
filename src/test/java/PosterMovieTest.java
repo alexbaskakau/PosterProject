@@ -42,6 +42,7 @@ public class PosterMovieTest {
         String[] actual = film.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void shouldFindWhenLessThenLimit() {
         PosterMovie film = new PosterMovie(7);
@@ -52,6 +53,7 @@ public class PosterMovieTest {
         String[] actual = film.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void ShouldFindIfMoviesEqualLimit() {
         PosterMovie film = new PosterMovie(3);
@@ -62,6 +64,7 @@ public class PosterMovieTest {
         String[] actual = film.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void shouldFindIfNoMovies() {
         PosterMovie film = new PosterMovie();
